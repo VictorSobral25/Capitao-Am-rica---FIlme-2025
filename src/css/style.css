@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    background-color: black;
+}
+
+header {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 150px;
+}
+
+li {
+    list-style: none;
+    color: aliceblue;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", serif;
+}
+
+.nav-red:hover {
+    color: #d21617;
+    scale: 1.25;
+    transition: .2s;
+}
+
+.nav-blue:hover {
+    color: rgb(5, 69, 199);
+    scale: 1.25;
+    transition: .2s;
+}
+
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#foto {
+    background-image: url('https://universoheroico.ig.com.br/wp-content/uploads/2024/07/Capitao-America-4-Admiravel-Mundo-Novo.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 600px;
+    position: relative;
+}
+
+.logo-filme {
+    width: 300px;
+    position: absolute;
+    background-color: unset;
+    top: 20px;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+}
+
+#trailer {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.trailer {
+    width: 50%;
+}
+
+#sinopse {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 30px;
+}
+
+.descricao {
+    color: #fff;
+    font-size: 15px;
+    font-family: "Kdam Thmor Pro", serif;
+    width: 100%;
+}
+
+.botao {
+    width: 200px;
+    height: 60px;
+    background-color: #d21617;
+    color: #fff;
+    padding: 8px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.botao:hover {
+    scale: 1.2;
+    background-color: rgb(5, 69, 199);
+}
+
+.ator {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.card-content {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 20px;
+    column-gap: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    column-gap: 200px;
+    margin: 0 20% 0 20%;
+}
+
+.card {
+    width: 70%;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 50%;
+    border-radius: 60px;
+    cursor: pointer;
+    transition: .1s;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 30px 10px;
+    color: #fff;
+    font-size: 18px;
+    font-family: "Kdam Thmor Pro", serif;
+    transition: .5s;
+}
+
+.banner-1 {
+    background-image: url('https://p2.trrsf.com/image/fget/cf/774/0/images.terra.com/2024/07/12/785155299-captain-america-brave-new-world-order.jpg');
+    background-position: 80% 0%;
+}
+
+.banner-2 {
+    background-image: url('https://static0.gamerantimages.com/wordpress/wp-content/uploads/2022/03/William-Hurt-Thunderbolt-Ross-Marvel-Studios-MCU.jpg');
+}
+
+.banner-2:hover {
+    background-image: url('https://i.ytimg.com/vi/1VvnJP_VdF4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCNppzdn3zG1VRTL7YZzCVNdcnTiQ');
+    scale: 1.1
+}
+
+.banner-1:hover {
+    scale: 1.1;
+}
+
+footer {
+    height: 300px;
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#logo-footer {
+    width: 80px;
+    transition: 1.7s;
+}
+
+#logo-footer:hover {
+    scale: 1.5;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", serif;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.list-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    .nav-mobile {
+        display: block;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #foto {
+        background-position: center;
+    }
+
+    #trailer {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .content {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .trailer {
+        width: 90%;
+
+    }
+
+    #sinopse {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .descricao {
+        width: 100%;
+    }
+
+    .botao {
+        width: 100%;
+        margin-top: 40px;
+    }
+
+    .card-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: unset;
+        margin: 20px 80px;
+        gap: 50px 10px;
+    }
+
+    .topo {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+        height: 80px;
+    }
+
+    span {
+        padding: 15px 0px;
+        font-size: 110%;
+    }
+
+    .list-footer {
+        gap: 20px 0px;
+        margin: 10px 0px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+
+    ul {
+        scale: 0.9;
+    }
+}
+
+@media(max-width: 480px) {
+    .content {
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        margin-right: 22px;
+    }
+
+    .trailer {
+        width: 100%;
+        margin-left: 2dvh;
+    }
+
+    .card-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: unset;
+        margin: 12px;
+    }
+}

@@ -1,0 +1,289 @@
+@import url('https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    background-color: black;
+}
+
+.topo {
+    background-color: black;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav {
+    width: 60%;
+}
+
+ul {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    gap: 150px;
+}
+
+li {
+    list-style: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 19px;
+    transition: .5s;
+    font-family: "Kdam Thmor Pro", serif;
+}
+
+.nav-red:hover {
+    color: #d21617;
+    scale: 1.25;
+    transition: .2s;
+}
+
+.nav-blue:hover {
+    color: rgb(5, 69, 199);
+    scale: 1.25;
+    transition: .2s;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}
+
+#foto {
+    background-image: url('https://universoheroico.ig.com.br/wp-content/uploads/2024/07/Capitao-America-4-Admiravel-Mundo-Novo.jpeg');
+    background-position: 50% 50%;
+    background-size: cover;
+    width: 100%;
+    height: 850px;
+    position: relative;
+}
+
+.logo-filme {
+    width: 300px;
+    position: absolute;
+    background-color: unset;
+    top: 40px;
+}
+
+.log {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formu {
+    width: 400px;
+    height: 70%;
+    margin-top: 90px;
+    border-radius: 80px;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 20px 70px 50px;
+}
+
+.formu {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px 0;
+    color: #fff;
+    font-size: 17px;
+    font-family: "Kdam Thmor Pro", serif;
+    text-shadow: 4px 6px 5px rgba(8, 51, 136, 1);
+}
+
+label {
+    align-self: flex-start;
+    margin-left: 95px;
+    margin-top: 4px;
+    margin-bottom: 3px;
+}
+
+input,
+textarea {
+    background-color: #d216167e;
+    width: 50%;
+    padding: 5px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    color: #fff;
+    text-shadow: 4px 6px 5px rgba(8, 51, 136, 1);
+}
+
+textarea {
+    height: 70px;
+    color: #fff;
+}
+
+.nome {
+    margin-top: 30px;
+}
+
+#nome::placeholder {
+    color: #fff;
+    text-shadow: none;
+}
+
+#email::placeholder {
+    color: #fff;
+    text-shadow: none;
+}
+
+#msg::placeholder {
+    color: #fff;
+    text-shadow: none;
+}
+
+.botao {
+    width: 90px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 10px;
+    font-family: "Kdam Thmor Pro", serif;
+    cursor: pointer;
+    transition: .8s;
+    background-color: #d216167e;
+    color: #fff;
+}
+
+.botao:hover {
+    scale: 1.2;
+    background-color: #1619d2af;
+}
+
+#insta {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+
+}
+
+.insta {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 10px;
+    transition: .5s;
+}
+
+.insta:hover {
+    scale: 1.2;
+}
+
+.tt {
+    width: 40px;
+    height: 40px;
+    border-radius: 13px;
+    transition: .5s;
+}
+
+#tt {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    margin-top: 15px;
+    transition: .5s;
+}
+
+#tt:hover {
+    scale: 1.2;
+}
+
+.rede {
+    margin-top: 20px;
+}
+
+footer {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: black;
+}
+
+#logo-footer {
+    width: 80px;
+    transition: 1.7s;
+}
+
+#logo-footer:hover {
+    scale: 1.5;
+}
+
+span {
+    color: #fff;
+    font-family: "Kdam Thmor Pro", serif;
+}
+
+.nav-mobile {
+    display: none;
+}
+
+.list-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(max-width: 768px) {
+    * {
+        max-height: 1280px;
+    }
+
+    .nav-mobile {
+        display: block;
+        background-color: black;
+    }
+
+    nav {
+        display: none;
+    }
+
+    #foto {
+        background-position: center;
+    }
+
+    .topo {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+        height: 80px;
+    }
+
+    footer {
+        margin-top: 20px;
+    }
+
+    span {
+        padding: 20px;
+    }
+    
+    .list-footer {
+        gap: 30px;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+@media(max-width: 480px) {
+    #formu {
+        scale: 0.9;
+    }
+
+    #foto {
+        background-position: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
